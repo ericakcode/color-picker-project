@@ -24,6 +24,7 @@ body {
 
 .container {
   background-color: #fff;
+  box-shadow: 0 4px 16px rgba(97, 39, 21, 0.2);
   padding: 40px;
   max-width: 480px;
   width: 100%;
@@ -33,7 +34,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
   color: #612715;
   text-align: center;
   font-weight: 700;
@@ -56,6 +57,7 @@ h3 {
   height: 120px;
   position: relative;
   background: #667eea;
+  box-shadow: 0 4px 16px rgba(97, 39, 21, 0.2);
   border-radius: 8px;
   transition: all 0.3s ease;
   border: 2px solid rgba(0, 0, 0, 0.1);
@@ -91,5 +93,60 @@ h3 {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid rgba(139, 65, 35, 0.2);
+  box-shadow: 0 4px 16px rgba(97, 39, 21, 0.06);
   margin-bottom: 24px;
+}
+
+.randomSmallContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid rgba(139, 65, 35, 0.2);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+#generateBtn {
+  min-width: 250px;
+  border-radius: 8px;
+  background-color: rgba(139, 65, 35, 1);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  padding: 20px 25px;
+  box-shadow: 0 4px 16px rgba(97, 39, 21, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#generateBtn:hover {
+  transform: scale(1.02);
+}
+
+.currentColorDisplay {
+  color: rgba(139, 65, 35, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(139, 65, 35, 0.2);
+  box-shadow: 0 4px 16px rgba(97, 39, 21, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.colorLabel {
+  color: #8b4123;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#currentColor {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #612715;
 }
