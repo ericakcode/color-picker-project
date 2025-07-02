@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎨 Color Picker Pro</h1>
+      <!-- Added id -->
+      <div id="colorPreview" class="colorPreview"></div>
+      <section class="randomContainer">
+        <h3>Random Magic</h3>
+        <div class="randomSmallContainer">
+          <button id="generateBtn">Generate Random Color</button>
+          <div class="currentColorDisplay">
+            <span class="colorLabel">Current Color:</span>
+            <span id="currentColor">#667eea</span>
+          </div>
+        </div>
+      </section>
+      <section class="popularColors">
+        <h3>Popular Colors</h3>
+        <div class="allColors">
+          <div class="color" data-color="#ff6b6b"></div>
+          <div class="color" data-color="#4ecdc4"></div>
+          <div class="color" data-color="#45b7d1"></div>
+          <div class="color" data-color="#96ceb4"></div>
+          <div class="color" data-color="#ffeaa7"></div>
+          <div class="color" data-color="#dda0dd"></div>
+          <div class="color" data-color="#98d8c8"></div>
+          <div class="color" data-color="#f7dc6f"></div>
+          <div class="color" data-color="#bb8fce"></div>
+          <div class="color" data-color="#85c1e9"></div>
+          <div class="color" data-color="#f8c471"></div>
+          <div class="color" data-color="#82e0aa"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="copyColorAlert" id="copyColorAlert">
+      Color copied to clipboard!
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
